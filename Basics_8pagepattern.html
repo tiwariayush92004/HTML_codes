@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            min-height: 45px;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left {
+            background-color: bisque;
+            width: 25%;
+        }
+        .right{
+            background-color: rgb(13, 175, 121);
+            width: 75%;
+        }
+        ul{
+            display: flex;
+            align-items: center; 
+            justify-content: flex-end; /* 'flex-end' is standard CSS for 'end' */
+            list-style: none; /* REMOVED: Bullet points from list items */
+        }
+        ul a{
+            margin: 0 15px; /* Vertical margin removed to prevent overflow out of nav height */
+            text-decoration: none; /* Optional clean link style */
+        }
+        header{
+            display: flex;
+        }
+        .col-1{
+            width: 50%;
+            height: 100vh;
+            background-color: rgb(132, 0, 255);
+        }
+        .col-2{
+            width: 50%;
+            height: 100vh;
+            background-color: rgb(17, 235, 64);
+        }
+    </style>
+</head>
+<body>
+    <!--  Comments in HTML body must use  |  comment --> syntax, not CSS /* comment */ syntax 
+    <nav>
+        <div class="left">
+            <h1>left box1</h1>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="col-1">
+            hi
+        </div>
+        <div class="col-2">
+            
+        </div>
+    </header>
+    
+</body>
+</html>

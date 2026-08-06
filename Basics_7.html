@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY5</title>
+    <style>
+        .sticky{
+            margin: 0;
+            padding: 0;
+            height: 70px;
+            width: 100%;
+            position: sticky;
+            top: 25px;
+            background-color: rgb(191, 255, 0);
+        }
+    
+        .fix{
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 80%;
+            left: 90%;
+        }
+
+        /* Added relative positioning to parent container */
+        .parent{
+            position: relative;
+        }
+
+        .child{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: turquoise;
+            top: 55px;
+            left: 55px;
+        }
+
+        .imgwp{
+            height: 55px;
+            width: 45px;
+        }
+
+        .child1{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            top: 60px;
+            left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky"></div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</div>
+    
+    <div class="fix">
+        <img src="imgwp.png" alt="error" class="imgwp">
+    </div>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+    <div class="parent1">
+        <div class="child1"></div>
+    </div>
+</body>
+</html>

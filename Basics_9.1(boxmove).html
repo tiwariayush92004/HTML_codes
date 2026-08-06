@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .movebox{
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            animation: ayuu;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ayuu {
+            0%{
+                background-color: darkgoldenrod;
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: yellow;
+                top: 50vh;
+                left: 0;
+            } 
+            50%{
+                background-color: red;
+                top: 50vh;
+                left: 50vw;
+            }
+            100%{
+                background-color: blue;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="movebox"></div> 
+</body>
+</html>
